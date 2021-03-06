@@ -37,8 +37,8 @@ jobs:
         echo DB_PORT=${{env.DB_PORT}} >> .env
         echo DB_USERNAME=${{env.DB_USERNAME}} >> .env
         echo DB_PASSWORD=${{env.DB_PASSWORD}} >> .env
-        echo 'List all directories'
-        echo ls -la
+    - name: list all directories
+      run: ls -la
 
 
 
