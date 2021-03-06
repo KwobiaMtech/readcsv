@@ -25,7 +25,6 @@ jobs:
     - name: Directory Permissions
       run: chmod -R 777 storage bootstrap/cache
     - uses: mirromutth/mysql-action@v1.1
-    - name: Create database
       with:
         host port: 3800 # Optional, default value is 3306. The port of host
         container port: 3307 # Optional, default value is 3306. The port of container
